@@ -6,7 +6,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use Lingua::StopWords::EN qw(getStopWords);
 use Lingua::Stem::Snowball qw(stem);
