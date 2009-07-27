@@ -1,4 +1,4 @@
-# $Id$
+# $Id: Conversation.pm 10 2009-07-27 05:07:13Z rcaputo $
 
 package Text::Conversation;
 
@@ -6,7 +6,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use Lingua::StopWords::EN qw(getStopWords);
 use Lingua::Stem::Snowball qw(stem);
@@ -60,13 +60,33 @@ sub new {
 	my %stopwords;
 
 	foreach my $stopword (keys %$stopwords) {
-		$stopwords{$self->_word_stem($stopword)}++;
+#		$stopwords{$self->_word_stem($stopword)}++;
 	}
 
 	$self->[CT_STOPWORDS] = \%stopwords;
 
 	return $self;
 }
+
+#sub hear {
+#	my ($self, $nick, $ident, $host, $text) = @_;
+#}
+#
+#sub see {
+#	my ($self, $nick, $ident, $host, $text) = @_;
+#}
+#
+#sub rename {
+#	my ($self, $old_nick, $new_nick, $ident, $host) = @_;
+#}
+#
+#sub arrival {
+#	my ($self, $nick, $ident, $host) = @_;
+#}
+#
+#sub departure {
+#	my ($self, $nick, $ident, $host) = @_;
+#}
 
 sub observe {
 	my ($self, $nick, $text) = @_;
@@ -734,13 +754,13 @@ The most common question so far is "How does it work?"  That's often
 followed by the leading "Does it just look for another speaker's ID at
 the start of the message?"  Text::Conversation uses multiple
 heuristics to determine a message's referent.  To be sure, the
-presence of another speaker's ID counts for a lot, but so common words
-between two messages.  Consider them similar to quoted text in an
-e-mail message.
+presence of another speaker's ID counts for a lot, but so do common
+words between two messages.  Consider them similar to quoted text in
+an e-mail message.
 
 Text::Conversation also keeps track of people who have spoken to each
 other, either explicitly or implicitly.  Chances are good that an
-otherwise undirected message is aimed at a person is part of an
+otherwise undirected message is aimed at a person and is part of an
 ongoing conversation.
 
 The module also incorporates penalties.  The link between two messages
@@ -819,7 +839,17 @@ example in the SYNOPSIS adequately portrays this behavior.
 
 =head1 SEE ALSO
 
-The heck if I know.  Suggest something.
+=head2 BUG TRACKER
+
+https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Text-Conversation
+
+=head2 REPOSITORY
+
+http://thirdlobe.com/svn/text-conversation/
+
+=head2 OTHER RESOURCES
+
+http://search.cpan.org/dist/Text-Conversation/
 
 =head1 BUGS
 
@@ -896,15 +926,15 @@ There are probably other things.
 
 =head1 AUTHORS
 
-Rocco Caputo <rcaputo@cpan.org> conceived of and created
-Text::Conversation with initial feedback and coments from the
-residents of various channels on irc.perl.org.
+Rocco Caputo  conceived of and created Text::Conversation with initial
+feedback and coments from the residents of various channels on
+irc.perl.org.
 
 =head1 LICENSE
 
-Except where otherwise noted, Text::Conversation is Copyright 2005 by
-Rocco Caputo.  All rights are reserved.  Text::Conversation is free
-software.  You may modify and/or redistribute it under the same terms
-as Perl itself.
+Except where otherwise noted, Text::Conversation is Copyright
+2005-2009 by Rocco Caputo.  All rights are reserved.
+Text::Conversation is free software.  You may modify and/or
+redistribute it under the same terms as Perl itself.
 
 =cut

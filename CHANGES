@@ -1,3 +1,42 @@
-=============================
-Beginning of Recorded History
-=============================
+=================================
+2009-07-27T16:15:24.394953Z v0_04
+=================================
+
+  2009-07-27 05:07:13 (r10) by rcaputo
+  lib/Text/Conversation.pm M; thread-irc.perl M; Makefile.PL M
+
+    Added a machine-readable repository directory to the distribution.
+    Documented the bug tracker, repository, and other resource URLs. 
+
+  2006-11-06 19:24:42 (r9) by rcaputo; Makefile.PL M
+
+    Set a LICENSE. Cheap kwalitee points!
+
+  2005-07-25 05:29:11 (r8) by rcaputo; lib/Text/Conversation.pm M
+
+    Insert another missing word into the documentation. 
+
+  2005-07-25 05:23:40 (r7) by rcaputo; lib/Text/Conversation.pm M
+
+    Correct a missing word in the documentation. 
+
+  2005-06-22 05:17:09 (r6) by rcaputo
+  t/simple.t M; MANIFEST M; Makefile.PL M; examples/tk-irc.perl M
+
+    Remove META.yml from MANIFEST. Update Makefile.PL to generate CHANGES
+    from subversion commit messages. Fix indentation here and there. 
+
+  2005-02-18 19:43:35 (r2) by rcaputo
+  README A; examples A; t/simple.t A; lib/Text/Conversation.pm A;
+  TestLib.pm A; t A; thread-irc.perl A; MANIFEST A; lib A; Makefile.PL A;
+  examples/tk-irc.perl A; lib/Text A
+
+    Initial revision 
+
+  2005-02-18 19:43:35 (r1) by (nobody); /trunk A; /branches A; /tags A
+
+    New repository initialized by cvs2svn.
+
+==============
+End of Excerpt
+==============

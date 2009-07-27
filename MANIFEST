@@ -1,10 +1,10 @@
-# $Id$
+# $Id: MANIFEST 6 2005-06-22 05:17:09Z rcaputo $
 CHANGES
 MANIFEST
-META.yml                                 Module meta-data (added by MakeMaker)
 Makefile.PL
 README
 TestLib.pm
 examples/tk-irc.perl
 lib/Text/Conversation.pm
 t/simple.t
+META.yml                                 Module meta-data (added by MakeMaker)

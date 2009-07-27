@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id$
+# $Id: Makefile.PL 10 2009-07-27 05:07:13Z rcaputo $
 
 use ExtUtils::MakeMaker;
 
@@ -7,21 +7,28 @@ use ExtUtils::MakeMaker;
 open(CHANGES, ">>CHANGES") and close CHANGES;
 
 WriteMakefile(
-  NAME         => 'Text::Conversation',
-  AUTHOR       => 'Rocco Caputo <rcaputo@cpan.org>',
-  ABSTRACT     => 'Turn a conversation into threads, one line at a time.',
-  VERSION_FROM => 'lib/Text/Conversation.pm',
-
-  PREREQ_PM    => {
+	NAME         => 'Text::Conversation',
+	AUTHOR       => 'Rocco Caputo <rcaputo@cpan.org>',
+	ABSTRACT     => 'Turn a conversation into threads, one line at a time.',
+	LICENSE      => 'perl',
+	VERSION_FROM => 'lib/Text/Conversation.pm',
+	META_ADD     => {
+		resources  => {
+			license    => 'http://dev.perl.org/licenses/',
+			repository => 'http://thirdlobe.com/svn/text-conversation/trunk'
+		},
+	},
+	PREREQ_PM    => {
 		'Lingua::Stem::Snowball'  =>  0.7,
 		'Lingua::StopWords::EN'   =>  0.0,
 		'String::Approx'          =>  3.23,
 	},
-  dist         => {
-    COMPRESS   => 'gzip -9f',
-    SUFFIX     => 'gz',
-    PREOP      => (
-      'cvs-log.perl | tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES'
-    ),
-  },
+	dist         => {
+		COMPRESS   => 'gzip -9f',
+		SUFFIX     => 'gz',
+		PREOP      => (
+			'svn-log.perl --repo https://thirdlobe.com/svn/text-conversation | ' .
+			'tee ./$(DISTNAME)-$(VERSION)/CHANGES > ./CHANGES'
+		),
+	},
 );

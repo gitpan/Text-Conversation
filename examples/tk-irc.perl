@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id$
+# $Id: tk-irc.perl 6 2005-06-22 05:17:09Z rcaputo $
 
 # A relatively simple IRC bot, if you call managing multiple channels
 # on multiple networks, and displaying each channel in a separate Tk
@@ -39,7 +39,7 @@ my %threaders;
 # knows about and the functions that will handle those events.
 
 while (my ($net, $info) = each %networks) {
-  # Create the component that will represent an IRC network.
+	# Create the component that will represent an IRC network.
 	POE::Component::IRC->new($net);
 
 	# Create the session that will interact with that network.
