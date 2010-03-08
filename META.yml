@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Text-Conversation
-version:            0.04
+version:            0.050
 abstract:           Turn a conversation into threads, one line at a time.
 author:
     - Rocco Caputo <rcaputo@cpan.org>
@@ -16,7 +16,7 @@ requires:
     String::Approx:       3.23
 resources:
     license:     http://dev.perl.org/licenses/
-    repository:  http://thirdlobe.com/svn/text-conversation/trunk
+    repository:  http://github.com/rcaputo/text-conversation
 no_index:
     directory:
         - t

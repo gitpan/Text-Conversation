@@ -1,12 +1,10 @@
-# $Id: Conversation.pm 10 2009-07-27 05:07:13Z rcaputo $
-
 package Text::Conversation;
 
 use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.050';
 
 use Lingua::StopWords::EN qw(getStopWords);
 use Lingua::Stem::Snowball qw(stem);
@@ -839,17 +837,7 @@ example in the SYNOPSIS adequately portrays this behavior.
 
 =head1 SEE ALSO
 
-=head2 BUG TRACKER
-
-https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Text-Conversation
-
-=head2 REPOSITORY
-
-http://thirdlobe.com/svn/text-conversation/
-
-=head2 OTHER RESOURCES
-
-http://search.cpan.org/dist/Text-Conversation/
+The heck if I know.  Suggest something.
 
 =head1 BUGS
 
@@ -924,6 +912,19 @@ person), so it's "fixed" to point to 01 (because 03 refers to that).
 
 There are probably other things.
 
+=head1 BUG TRACKER
+
+https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=Text-Conversation
+
+=head1 REPOSITORY
+
+http://github.com/rcaputo/text-conversation
+http://gitorious.org/text-conversation
+
+=head1 OTHER RESOURCES
+
+http://search.cpan.org/dist/Text-Conversation/
+
 =head1 AUTHORS
 
 Rocco Caputo  conceived of and created Text::Conversation with initial
@@ -933,7 +934,7 @@ irc.perl.org.
 =head1 LICENSE
 
 Except where otherwise noted, Text::Conversation is Copyright
-2005-2009 by Rocco Caputo.  All rights are reserved.
+2005-2010 by Rocco Caputo.  All rights are reserved.
 Text::Conversation is free software.  You may modify and/or
 redistribute it under the same terms as Perl itself.
 

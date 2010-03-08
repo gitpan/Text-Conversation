@@ -1,5 +1,3 @@
-# $Id: TestLib.pm 2 2005-02-18 19:43:35Z rcaputo $
-
 package TestLib;
 
 use warnings;

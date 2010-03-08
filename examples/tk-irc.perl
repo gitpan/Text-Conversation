@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# $Id: tk-irc.perl 6 2005-06-22 05:17:09Z rcaputo $
 
 # A relatively simple IRC bot, if you call managing multiple channels
 # on multiple networks, and displaying each channel in a separate Tk
