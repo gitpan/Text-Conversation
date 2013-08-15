@@ -1,10 +1,18 @@
-# $Id$
 CHANGES
+LICENSE
 MANIFEST
+META.json
+META.yml
 Makefile.PL
 README
+README.mkdn
 TestLib.pm
+dist.ini
 examples/tk-irc.perl
+examples/tk-irc.perl~
 lib/Text/Conversation.pm
+lib/Text/Conversation.pm~
+t/000-report-versions.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
 t/simple.t
-META.yml                                 Module meta-data (added by MakeMaker)

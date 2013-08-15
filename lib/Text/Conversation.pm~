@@ -711,10 +711,6 @@ __END__
 
 Text::Conversation - Turn a conversation into threads, one line at a time.
 
-=head1 VERSION
-
-version 0.051
-
 =head1 SYNOPSIS
 
 	#!perl

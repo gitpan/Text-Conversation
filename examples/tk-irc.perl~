@@ -20,12 +20,12 @@ use POE::Component::IRC;
 use Text::Conversation;
 
 my %networks = (
-	perl => {
+	rh => {
 		host => "irc.perl.org",
 		port => 6667,
-		chan => [ "#bots", "#poe" ],
+		chan => [ "#bots" ],
 		nick => "textConvEg",
-	},
+	}
 );
 
 $poe_main_window->geometry('600x400');

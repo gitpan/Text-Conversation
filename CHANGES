@@ -1,25 +1,29 @@
-================================
-2010-03-08 01:43:07 -0500 v0_050
-================================
+==================================================
+Changes from 2012-08-15 00:00:00 +0000 to present.
+==================================================
 
-  commit 9a10f3f7acece7e0cbfef3a05fab2c4bbf098674
+------------------------------------------
+version 0.051 at 2013-08-15 06:49:30 +0000
+------------------------------------------
+
+  Change: 7baa879c1bb478f922c420eb01d8b71d01f94972
   Author: Rocco Caputo <rcaputo@cpan.org>
-  Date:   Mon Mar 8 01:41:44 2010 -0500
-  
-    Bump the version for release.
+  Date : 2013-08-15 02:48:51 +0000
 
-  commit eb4cb945a9100bfb482fdb4d6628b6f80b106898
+    Update copyright date. 
+
+  Change: 6a7502e739d0c1c59862a209578c49e9196f57c1
   Author: Rocco Caputo <rcaputo@cpan.org>
-  Date:   Mon Mar 8 01:41:14 2010 -0500
-  
-    Prepare for the git toolchain, and update the repository URLs.
+  Date : 2013-08-15 02:39:41 +0000
 
-  commit 6396f4005e9c6cc2aa11e611f9cbb76216047e14
+    Fix example for modern POE::Component::IRC. 
+
+  Change: c33a78fbdf0f4f9ba780365e45f7ea30733af59a
   Author: Rocco Caputo <rcaputo@cpan.org>
-  Date:   Mon Mar 8 01:31:16 2010 -0500
-  
-    Rearrange repository for git. 
+  Date : 2013-08-11 17:54:06 +0000
 
-==============
-End of Excerpt
-==============
+    Switch to Dist::Zilla. 
+
+================================================
+Plus 2 releases after 2012-08-15 00:00:00 +0000.
+================================================
