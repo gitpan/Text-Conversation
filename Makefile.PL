@@ -32,10 +32,9 @@ my %WriteMakefileArgs = (
     "Carp" => "1.26",
     "Scalar::Util" => "1.29",
     "Test::More" => "0.98",
-    "TestLib" => 0,
     "lib" => 0
   },
-  "VERSION" => "0.051",
+  "VERSION" => "0.053",
   "test" => {
     "TESTS" => "t/*.t"
   }

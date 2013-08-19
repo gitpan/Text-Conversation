@@ -713,7 +713,7 @@ Text::Conversation - Turn a conversation into threads, one line at a time.
 
 =head1 VERSION
 
-version 0.051
+version 0.053
 
 =head1 SYNOPSIS
 

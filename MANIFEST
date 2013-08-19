@@ -1,6 +1,7 @@
 CHANGES
 LICENSE
 MANIFEST
+MANIFEST.SKIP
 META.json
 META.yml
 Makefile.PL
@@ -9,9 +10,7 @@ README.mkdn
 TestLib.pm
 dist.ini
 examples/tk-irc.perl
-examples/tk-irc.perl~
 lib/Text/Conversation.pm
-lib/Text/Conversation.pm~
 t/000-report-versions.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t

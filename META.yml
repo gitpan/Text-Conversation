@@ -6,7 +6,6 @@ build_requires:
   Carp: 1.26
   Scalar::Util: 1.29
   Test::More: 0.98
-  TestLib: 0
   lib: 0
   perl: 5.004
 configure_requires:
@@ -31,4 +30,4 @@ resources:
   homepage: http://search.cpan.org/dist/Text-Conversation/
   license: http://dev.perl.org/licenses/
   repository: git://github.com/rcaputo/text-conversation.git
-version: 0.051
+version: 0.053
